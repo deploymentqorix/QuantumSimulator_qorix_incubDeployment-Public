@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-gray-900">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Simulator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .mono { font-family: 'Roboto Mono', monospace; }
+        .result-bar-bg { background-color: #374151; } /* gray-700 */
+        .result-bar-fill { background-color: #3b82f6; } /* blue-500 */
+        /* Custom checkbox style */
+        .toggle-checkbox:checked { right: 0; border-color: #3b82f6; }
+        .toggle-checkbox:checked + .toggle-label { background-color: #3b82f6; }
+    </style>
+</head>
+<body class="h-full flex items-center justify-center p-4 bg-gray-900 text-white">
+
+    <div class="w-full max-w-4xl mx-auto bg-gray-800 rounded-2xl shadow-2xl p-6 md:p-8 space-y-6">
+        
+        <!-- Header -->
+        <div class="text-center">
+            <h1 class="text-3xl font-bold text-blue-400">Quantum Circuit Simulator</h1>
+            <p class="text-gray-400 mt-2">Compose your QASM circuit and run it on the C++ backend.</p>
+        </div>
+
+        <!-- QASM Editor -->
+        <div>
+            <label for="qasm-editor" class="block text-sm font-medium text-gray-300 mb-2">OpenQASM 2.0 Editor</label>
+            <textarea id="qasm-editor" rows="12" class="mono w-full p-4 bg-gray-900 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all text-gray-200 text-sm">OPENQASM 2.0;
+include "qelib1.inc";
+
+// Create a Bell State (entanglement)
+qreg q[2];
+creg c[2];
+
+h q[0];
+x q[0];
+h q[0];
+x q[0];
+h q[0];
+x q[0];
+cx q[0], q[1];
+
+measure q[0] -> c[0];
+measure q[1] -> c[1];
+</textarea>
+        </div>
+
+        <!-- NEW: Options Section -->
+        <div class="flex items-center justify-center space-x-4">
+            <label for="fuse-gates-toggle" class="flex items-center cursor-pointer">
+                <div class="relative">
+                    <input type="checkbox" id="fuse-gates-toggle" class="sr-only">
+                    <div class="block bg-gray-600 w-14 h-8 rounded-full"></div>
+                    <div class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
+                </div>
+                <div class="ml-3 text-gray-300 font-medium">
+                    Enable Gate Fusion
+                </div>
+            </label>
+        </div>
+
+        <!-- Action Button -->
+        <div class="text-center">
+            <button id="simulate-button" class="w-full md:w-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-transform transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-800">
+                <span id="button-text">Run Simulation</span>
+                <span id="loading-spinner" class="hidden">
+                    <svg class="animate-spin -ml-1 mr-3 h-5 w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0.0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    Simulating...
+                </span>
+            </button>
+        </div>
+        
+        <!-- Results Section -->
+        <div id="results-container" class="hidden pt-6 space-y-4">
+            <div id="error-message" class="hidden bg-red-900 border border-red-700 text-red-200 px-4 py-3 rounded-lg text-center"></div>
+            
+            <!-- NEW: Benchmark Display -->
+            <div id="benchmark-results" class="bg-gray-900 p-4 rounded-lg">
+                 <h3 class="text-lg font-semibold text-center text-gray-300 mb-3">Performance</h3>
+                 <div class="flex justify-around text-center mono">
+                    <div>
+                        <div class="text-2xl font-bold text-blue-400" id="time-ms">--</div>
+                        <div class="text-xs text-gray-500">Time (ms)</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-blue-400" id="qubits">--</div>
+                        <div class="text-xs text-gray-500">Qubits</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-blue-400" id="gates-executed">--</div>
+                        <div class="text-xs text-gray-500">Gates Executed</div>
+                    </div>
+                 </div>
+            </div>
+
+            <div id="results-chart" class="bg-gray-900 p-4 rounded-lg space-y-3">
+                 <h3 class="text-lg font-semibold text-center text-gray-300 mb-3">Measurement Outcomes</h3>
+                <!-- Results will be injected here by JavaScript -->
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const simulateButton = document.getElementById('simulate-button');
+        const buttonText = document.getElementById('button-text');
+        const loadingSpinner = document.getElementById('loading-spinner');
+        const qasmEditor = document.getElementById('qasm-editor');
+        const resultsContainer = document.getElementById('results-container');
+        const resultsChart = document.getElementById('results-chart');
+        const errorMessage = document.getElementById('error-message');
+        const fuseGatesToggle = document.getElementById('fuse-gates-toggle');
+
+        // NEW: Benchmark display elements
+        const timeDisplay = document.getElementById('time-ms');
+        const qubitsDisplay = document.getElementById('qubits');
+        const gatesExecutedDisplay = document.getElementById('gates-executed');
+
+        simulateButton.addEventListener('click', async () => {
+            buttonText.classList.add('hidden');
+            loadingSpinner.classList.remove('hidden');
+            simulateButton.disabled = true;
+            resultsContainer.classList.add('hidden');
+            errorMessage.classList.add('hidden');
+            resultsChart.innerHTML = '<h3 class="text-lg font-semibold text-center text-gray-300 mb-3">Measurement Outcomes</h3>'; // Reset chart with header
+
+            const requestBody = {
+                qasm: qasmEditor.value,
+                fuse_gates: fuseGatesToggle.checked,
+                shots: 1024
+            };
+
+            try {
+                const response = await fetch('http://localhost:8080/simulate', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(requestBody),
+                });
+
+                const results = await response.json();
+                if (!response.ok) {
+                    throw new Error(results.message || `Server responded with status ${response.status}`);
+                }
+
+                displayResults(results);
+
+            } catch (error) {
+                displayError(error.message);
+            } finally {
+                buttonText.classList.remove('hidden');
+                loadingSpinner.classList.add('hidden');
+                simulateButton.disabled = false;
+            }
+        });
+
+        function displayResults(data) {
+            resultsContainer.classList.remove('hidden');
+            
+            // Display benchmark data
+            timeDisplay.textContent = data.benchmark.time_ms.toFixed(3);
+            qubitsDisplay.textContent = data.benchmark.qubits;
+            gatesExecutedDisplay.textContent = data.benchmark.gates_executed;
+
+            // Display measurement counts
+            const counts = data.counts;
+            const totalShots = Object.values(counts).reduce((sum, count) => sum + count, 0);
+            if (totalShots === 0) return;
+
+            const sortedOutcomes = Object.keys(counts).sort();
+
+            for (const outcome of sortedOutcomes) {
+                const count = counts[outcome];
+                const percentage = ((count / totalShots) * 100).toFixed(2);
+                
+                const resultElement = document.createElement('div');
+                resultElement.className = 'grid grid-cols-12 items-center gap-2 text-sm';
+                resultElement.innerHTML = `
+                    <div class="col-span-2 mono text-right text-gray-300">${outcome}</div>
+                    <div class="col-span-8">
+                        <div class="w-full result-bar-bg rounded-full h-5 shadow-inner">
+                            <div class="result-bar-fill h-5 rounded-full flex items-center justify-end pr-2" style="width: ${percentage}%;">
+                                <span class="text-xs font-bold text-white">${percentage}%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-2 mono text-left text-gray-400">${count}</div>
+                `;
+                resultsChart.appendChild(resultElement);
+            }
+        }
+
+        function displayError(message) {
+            resultsContainer.classList.remove('hidden');
+            errorMessage.classList.remove('hidden');
+            errorMessage.textContent = `Error: ${message}. Is the C++ server running?`;
+        }
+    </script>
+</body>
+</html>

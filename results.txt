@@ -1,0 +1,8 @@
+Successfully parsed QASM file: ./bell.qasm
+Backend: statevector
+
+--- Results ---
+00: 255
+01: 281
+10: 267
+11: 221
