@@ -57,13 +57,23 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/l-100809/QuantumSimulator/QuantumSimulator
+CMAKE_SOURCE_DIR = /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/l-100809/QuantumSimulator/QuantumSimulator/build
+CMAKE_BINARY_DIR = /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/build
 
 #=============================================================================
 # Targets provided globally by CMake.
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -87,9 +97,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/l-100809/QuantumSimulator/QuantumSimulator/build/CMakeFiles /home/l-100809/QuantumSimulator/QuantumSimulator/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/build/CMakeFiles /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/l-100809/QuantumSimulator/QuantumSimulator/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -154,6 +164,19 @@ qsim_server: cmake_check_build_system
 qsim_server/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/qsim_server.dir/build.make CMakeFiles/qsim_server.dir/build
 .PHONY : qsim_server/fast
+
+#=============================================================================
+# Target rules for targets named runTests
+
+# Build rule for target.
+runTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 runTests
+.PHONY : runTests
+
+# fast build rule for target.
+runTests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/build
+.PHONY : runTests/fast
 
 src/AmplitudeDampingChannel.o: src/AmplitudeDampingChannel.cpp.o
 .PHONY : src/AmplitudeDampingChannel.o
@@ -587,6 +610,294 @@ src/main_server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/qsim_server.dir/build.make CMakeFiles/qsim_server.dir/src/main_server.cpp.s
 .PHONY : src/main_server.cpp.s
 
+tests/test_circuit.o: tests/test_circuit.cpp.o
+.PHONY : tests/test_circuit.o
+
+# target to build an object file
+tests/test_circuit.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test_circuit.cpp.o
+.PHONY : tests/test_circuit.cpp.o
+
+tests/test_circuit.i: tests/test_circuit.cpp.i
+.PHONY : tests/test_circuit.i
+
+# target to preprocess a source file
+tests/test_circuit.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test_circuit.cpp.i
+.PHONY : tests/test_circuit.cpp.i
+
+tests/test_circuit.s: tests/test_circuit.cpp.s
+.PHONY : tests/test_circuit.s
+
+# target to generate assembly for a file
+tests/test_circuit.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test_circuit.cpp.s
+.PHONY : tests/test_circuit.cpp.s
+
+tests/test_circuit_extended.o: tests/test_circuit_extended.cpp.o
+.PHONY : tests/test_circuit_extended.o
+
+# target to build an object file
+tests/test_circuit_extended.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test_circuit_extended.cpp.o
+.PHONY : tests/test_circuit_extended.cpp.o
+
+tests/test_circuit_extended.i: tests/test_circuit_extended.cpp.i
+.PHONY : tests/test_circuit_extended.i
+
+# target to preprocess a source file
+tests/test_circuit_extended.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test_circuit_extended.cpp.i
+.PHONY : tests/test_circuit_extended.cpp.i
+
+tests/test_circuit_extended.s: tests/test_circuit_extended.cpp.s
+.PHONY : tests/test_circuit_extended.s
+
+# target to generate assembly for a file
+tests/test_circuit_extended.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test_circuit_extended.cpp.s
+.PHONY : tests/test_circuit_extended.cpp.s
+
+tests/test_cli.o: tests/test_cli.cpp.o
+.PHONY : tests/test_cli.o
+
+# target to build an object file
+tests/test_cli.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test_cli.cpp.o
+.PHONY : tests/test_cli.cpp.o
+
+tests/test_cli.i: tests/test_cli.cpp.i
+.PHONY : tests/test_cli.i
+
+# target to preprocess a source file
+tests/test_cli.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test_cli.cpp.i
+.PHONY : tests/test_cli.cpp.i
+
+tests/test_cli.s: tests/test_cli.cpp.s
+.PHONY : tests/test_cli.s
+
+# target to generate assembly for a file
+tests/test_cli.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test_cli.cpp.s
+.PHONY : tests/test_cli.cpp.s
+
+tests/test_cli_extended.o: tests/test_cli_extended.cpp.o
+.PHONY : tests/test_cli_extended.o
+
+# target to build an object file
+tests/test_cli_extended.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test_cli_extended.cpp.o
+.PHONY : tests/test_cli_extended.cpp.o
+
+tests/test_cli_extended.i: tests/test_cli_extended.cpp.i
+.PHONY : tests/test_cli_extended.i
+
+# target to preprocess a source file
+tests/test_cli_extended.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test_cli_extended.cpp.i
+.PHONY : tests/test_cli_extended.cpp.i
+
+tests/test_cli_extended.s: tests/test_cli_extended.cpp.s
+.PHONY : tests/test_cli_extended.s
+
+# target to generate assembly for a file
+tests/test_cli_extended.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test_cli_extended.cpp.s
+.PHONY : tests/test_cli_extended.cpp.s
+
+tests/test_densitymatrix.o: tests/test_densitymatrix.cpp.o
+.PHONY : tests/test_densitymatrix.o
+
+# target to build an object file
+tests/test_densitymatrix.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test_densitymatrix.cpp.o
+.PHONY : tests/test_densitymatrix.cpp.o
+
+tests/test_densitymatrix.i: tests/test_densitymatrix.cpp.i
+.PHONY : tests/test_densitymatrix.i
+
+# target to preprocess a source file
+tests/test_densitymatrix.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test_densitymatrix.cpp.i
+.PHONY : tests/test_densitymatrix.cpp.i
+
+tests/test_densitymatrix.s: tests/test_densitymatrix.cpp.s
+.PHONY : tests/test_densitymatrix.s
+
+# target to generate assembly for a file
+tests/test_densitymatrix.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test_densitymatrix.cpp.s
+.PHONY : tests/test_densitymatrix.cpp.s
+
+tests/test_densitymatrix_extended.o: tests/test_densitymatrix_extended.cpp.o
+.PHONY : tests/test_densitymatrix_extended.o
+
+# target to build an object file
+tests/test_densitymatrix_extended.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test_densitymatrix_extended.cpp.o
+.PHONY : tests/test_densitymatrix_extended.cpp.o
+
+tests/test_densitymatrix_extended.i: tests/test_densitymatrix_extended.cpp.i
+.PHONY : tests/test_densitymatrix_extended.i
+
+# target to preprocess a source file
+tests/test_densitymatrix_extended.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test_densitymatrix_extended.cpp.i
+.PHONY : tests/test_densitymatrix_extended.cpp.i
+
+tests/test_densitymatrix_extended.s: tests/test_densitymatrix_extended.cpp.s
+.PHONY : tests/test_densitymatrix_extended.s
+
+# target to generate assembly for a file
+tests/test_densitymatrix_extended.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test_densitymatrix_extended.cpp.s
+.PHONY : tests/test_densitymatrix_extended.cpp.s
+
+tests/test_noise.o: tests/test_noise.cpp.o
+.PHONY : tests/test_noise.o
+
+# target to build an object file
+tests/test_noise.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test_noise.cpp.o
+.PHONY : tests/test_noise.cpp.o
+
+tests/test_noise.i: tests/test_noise.cpp.i
+.PHONY : tests/test_noise.i
+
+# target to preprocess a source file
+tests/test_noise.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test_noise.cpp.i
+.PHONY : tests/test_noise.cpp.i
+
+tests/test_noise.s: tests/test_noise.cpp.s
+.PHONY : tests/test_noise.s
+
+# target to generate assembly for a file
+tests/test_noise.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test_noise.cpp.s
+.PHONY : tests/test_noise.cpp.s
+
+tests/test_noise_extended.o: tests/test_noise_extended.cpp.o
+.PHONY : tests/test_noise_extended.o
+
+# target to build an object file
+tests/test_noise_extended.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test_noise_extended.cpp.o
+.PHONY : tests/test_noise_extended.cpp.o
+
+tests/test_noise_extended.i: tests/test_noise_extended.cpp.i
+.PHONY : tests/test_noise_extended.i
+
+# target to preprocess a source file
+tests/test_noise_extended.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test_noise_extended.cpp.i
+.PHONY : tests/test_noise_extended.cpp.i
+
+tests/test_noise_extended.s: tests/test_noise_extended.cpp.s
+.PHONY : tests/test_noise_extended.s
+
+# target to generate assembly for a file
+tests/test_noise_extended.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test_noise_extended.cpp.s
+.PHONY : tests/test_noise_extended.cpp.s
+
+tests/test_server.o: tests/test_server.cpp.o
+.PHONY : tests/test_server.o
+
+# target to build an object file
+tests/test_server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test_server.cpp.o
+.PHONY : tests/test_server.cpp.o
+
+tests/test_server.i: tests/test_server.cpp.i
+.PHONY : tests/test_server.i
+
+# target to preprocess a source file
+tests/test_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test_server.cpp.i
+.PHONY : tests/test_server.cpp.i
+
+tests/test_server.s: tests/test_server.cpp.s
+.PHONY : tests/test_server.s
+
+# target to generate assembly for a file
+tests/test_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test_server.cpp.s
+.PHONY : tests/test_server.cpp.s
+
+tests/test_server_extended.o: tests/test_server_extended.cpp.o
+.PHONY : tests/test_server_extended.o
+
+# target to build an object file
+tests/test_server_extended.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test_server_extended.cpp.o
+.PHONY : tests/test_server_extended.cpp.o
+
+tests/test_server_extended.i: tests/test_server_extended.cpp.i
+.PHONY : tests/test_server_extended.i
+
+# target to preprocess a source file
+tests/test_server_extended.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test_server_extended.cpp.i
+.PHONY : tests/test_server_extended.cpp.i
+
+tests/test_server_extended.s: tests/test_server_extended.cpp.s
+.PHONY : tests/test_server_extended.s
+
+# target to generate assembly for a file
+tests/test_server_extended.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test_server_extended.cpp.s
+.PHONY : tests/test_server_extended.cpp.s
+
+tests/test_statevector.o: tests/test_statevector.cpp.o
+.PHONY : tests/test_statevector.o
+
+# target to build an object file
+tests/test_statevector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test_statevector.cpp.o
+.PHONY : tests/test_statevector.cpp.o
+
+tests/test_statevector.i: tests/test_statevector.cpp.i
+.PHONY : tests/test_statevector.i
+
+# target to preprocess a source file
+tests/test_statevector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test_statevector.cpp.i
+.PHONY : tests/test_statevector.cpp.i
+
+tests/test_statevector.s: tests/test_statevector.cpp.s
+.PHONY : tests/test_statevector.s
+
+# target to generate assembly for a file
+tests/test_statevector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test_statevector.cpp.s
+.PHONY : tests/test_statevector.cpp.s
+
+tests/test_statevector_extended.o: tests/test_statevector_extended.cpp.o
+.PHONY : tests/test_statevector_extended.o
+
+# target to build an object file
+tests/test_statevector_extended.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test_statevector_extended.cpp.o
+.PHONY : tests/test_statevector_extended.cpp.o
+
+tests/test_statevector_extended.i: tests/test_statevector_extended.cpp.i
+.PHONY : tests/test_statevector_extended.i
+
+# target to preprocess a source file
+tests/test_statevector_extended.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test_statevector_extended.cpp.i
+.PHONY : tests/test_statevector_extended.cpp.i
+
+tests/test_statevector_extended.s: tests/test_statevector_extended.cpp.s
+.PHONY : tests/test_statevector_extended.s
+
+# target to generate assembly for a file
+tests/test_statevector_extended.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test_statevector_extended.cpp.s
+.PHONY : tests/test_statevector_extended.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -595,9 +906,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... test"
 	@echo "... qsim_cli"
 	@echo "... qsim_core"
 	@echo "... qsim_server"
+	@echo "... runTests"
 	@echo "... src/AmplitudeDampingChannel.o"
 	@echo "... src/AmplitudeDampingChannel.i"
 	@echo "... src/AmplitudeDampingChannel.s"
@@ -652,6 +965,42 @@ help:
 	@echo "... src/main_server.o"
 	@echo "... src/main_server.i"
 	@echo "... src/main_server.s"
+	@echo "... tests/test_circuit.o"
+	@echo "... tests/test_circuit.i"
+	@echo "... tests/test_circuit.s"
+	@echo "... tests/test_circuit_extended.o"
+	@echo "... tests/test_circuit_extended.i"
+	@echo "... tests/test_circuit_extended.s"
+	@echo "... tests/test_cli.o"
+	@echo "... tests/test_cli.i"
+	@echo "... tests/test_cli.s"
+	@echo "... tests/test_cli_extended.o"
+	@echo "... tests/test_cli_extended.i"
+	@echo "... tests/test_cli_extended.s"
+	@echo "... tests/test_densitymatrix.o"
+	@echo "... tests/test_densitymatrix.i"
+	@echo "... tests/test_densitymatrix.s"
+	@echo "... tests/test_densitymatrix_extended.o"
+	@echo "... tests/test_densitymatrix_extended.i"
+	@echo "... tests/test_densitymatrix_extended.s"
+	@echo "... tests/test_noise.o"
+	@echo "... tests/test_noise.i"
+	@echo "... tests/test_noise.s"
+	@echo "... tests/test_noise_extended.o"
+	@echo "... tests/test_noise_extended.i"
+	@echo "... tests/test_noise_extended.s"
+	@echo "... tests/test_server.o"
+	@echo "... tests/test_server.i"
+	@echo "... tests/test_server.s"
+	@echo "... tests/test_server_extended.o"
+	@echo "... tests/test_server_extended.i"
+	@echo "... tests/test_server_extended.s"
+	@echo "... tests/test_statevector.o"
+	@echo "... tests/test_statevector.i"
+	@echo "... tests/test_statevector.s"
+	@echo "... tests/test_statevector_extended.o"
+	@echo "... tests/test_statevector_extended.i"
+	@echo "... tests/test_statevector_extended.s"
 .PHONY : help
 
 

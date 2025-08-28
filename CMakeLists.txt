@@ -63,3 +63,18 @@ target_link_libraries(qsim_cli PRIVATE qsim_core OpenMP::OpenMP_CXX)
 # QCSIM_SRS_302: A C++ backend server shall be implemented to handle simulation requests.
 add_executable(qsim_server src/main_server.cpp)
 target_link_libraries(qsim_server PRIVATE qsim_core OpenMP::OpenMP_CXX Threads::Threads)
+enable_testing()
+
+# Find GoogleTest
+find_package(GTest REQUIRED)
+include_directories(${GTEST_INCLUDE_DIRS})
+
+# Collect all test files
+file(GLOB TEST_SOURCES tests/*.cpp)
+
+# Create test executable
+add_executable(runTests ${TEST_SOURCES})
+target_link_libraries(runTests ${GTEST_LIBRARIES} pthread)
+
+# Register tests
+add_test(NAME QuantumSimulatorTests COMMAND runTests)

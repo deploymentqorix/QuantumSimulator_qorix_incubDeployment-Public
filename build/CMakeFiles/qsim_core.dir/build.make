@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/l-100809/QuantumSimulator/QuantumSimulator
+CMAKE_SOURCE_DIR = /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/l-100809/QuantumSimulator/QuantumSimulator/build
+CMAKE_BINARY_DIR = /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/qsim_core.dir/depend.make
@@ -70,241 +70,241 @@ include CMakeFiles/qsim_core.dir/progress.make
 include CMakeFiles/qsim_core.dir/flags.make
 
 CMakeFiles/qsim_core.dir/src/StateVector.cpp.o: CMakeFiles/qsim_core.dir/flags.make
-CMakeFiles/qsim_core.dir/src/StateVector.cpp.o: /home/l-100809/QuantumSimulator/QuantumSimulator/src/StateVector.cpp
+CMakeFiles/qsim_core.dir/src/StateVector.cpp.o: /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/StateVector.cpp
 CMakeFiles/qsim_core.dir/src/StateVector.cpp.o: CMakeFiles/qsim_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100809/QuantumSimulator/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/qsim_core.dir/src/StateVector.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsim_core.dir/src/StateVector.cpp.o -MF CMakeFiles/qsim_core.dir/src/StateVector.cpp.o.d -o CMakeFiles/qsim_core.dir/src/StateVector.cpp.o -c /home/l-100809/QuantumSimulator/QuantumSimulator/src/StateVector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/qsim_core.dir/src/StateVector.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsim_core.dir/src/StateVector.cpp.o -MF CMakeFiles/qsim_core.dir/src/StateVector.cpp.o.d -o CMakeFiles/qsim_core.dir/src/StateVector.cpp.o -c /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/StateVector.cpp
 
 CMakeFiles/qsim_core.dir/src/StateVector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qsim_core.dir/src/StateVector.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/l-100809/QuantumSimulator/QuantumSimulator/src/StateVector.cpp > CMakeFiles/qsim_core.dir/src/StateVector.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/StateVector.cpp > CMakeFiles/qsim_core.dir/src/StateVector.cpp.i
 
 CMakeFiles/qsim_core.dir/src/StateVector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qsim_core.dir/src/StateVector.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/l-100809/QuantumSimulator/QuantumSimulator/src/StateVector.cpp -o CMakeFiles/qsim_core.dir/src/StateVector.cpp.s
-
-CMakeFiles/qsim_core.dir/src/Gates.cpp.o: CMakeFiles/qsim_core.dir/flags.make
-CMakeFiles/qsim_core.dir/src/Gates.cpp.o: /home/l-100809/QuantumSimulator/QuantumSimulator/src/Gates.cpp
-CMakeFiles/qsim_core.dir/src/Gates.cpp.o: CMakeFiles/qsim_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100809/QuantumSimulator/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/qsim_core.dir/src/Gates.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsim_core.dir/src/Gates.cpp.o -MF CMakeFiles/qsim_core.dir/src/Gates.cpp.o.d -o CMakeFiles/qsim_core.dir/src/Gates.cpp.o -c /home/l-100809/QuantumSimulator/QuantumSimulator/src/Gates.cpp
-
-CMakeFiles/qsim_core.dir/src/Gates.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qsim_core.dir/src/Gates.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/l-100809/QuantumSimulator/QuantumSimulator/src/Gates.cpp > CMakeFiles/qsim_core.dir/src/Gates.cpp.i
-
-CMakeFiles/qsim_core.dir/src/Gates.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qsim_core.dir/src/Gates.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/l-100809/QuantumSimulator/QuantumSimulator/src/Gates.cpp -o CMakeFiles/qsim_core.dir/src/Gates.cpp.s
-
-CMakeFiles/qsim_core.dir/src/Simulator.cpp.o: CMakeFiles/qsim_core.dir/flags.make
-CMakeFiles/qsim_core.dir/src/Simulator.cpp.o: /home/l-100809/QuantumSimulator/QuantumSimulator/src/Simulator.cpp
-CMakeFiles/qsim_core.dir/src/Simulator.cpp.o: CMakeFiles/qsim_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100809/QuantumSimulator/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/qsim_core.dir/src/Simulator.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsim_core.dir/src/Simulator.cpp.o -MF CMakeFiles/qsim_core.dir/src/Simulator.cpp.o.d -o CMakeFiles/qsim_core.dir/src/Simulator.cpp.o -c /home/l-100809/QuantumSimulator/QuantumSimulator/src/Simulator.cpp
-
-CMakeFiles/qsim_core.dir/src/Simulator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qsim_core.dir/src/Simulator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/l-100809/QuantumSimulator/QuantumSimulator/src/Simulator.cpp > CMakeFiles/qsim_core.dir/src/Simulator.cpp.i
-
-CMakeFiles/qsim_core.dir/src/Simulator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qsim_core.dir/src/Simulator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/l-100809/QuantumSimulator/QuantumSimulator/src/Simulator.cpp -o CMakeFiles/qsim_core.dir/src/Simulator.cpp.s
-
-CMakeFiles/qsim_core.dir/src/QuantumCircuit.cpp.o: CMakeFiles/qsim_core.dir/flags.make
-CMakeFiles/qsim_core.dir/src/QuantumCircuit.cpp.o: /home/l-100809/QuantumSimulator/QuantumSimulator/src/QuantumCircuit.cpp
-CMakeFiles/qsim_core.dir/src/QuantumCircuit.cpp.o: CMakeFiles/qsim_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100809/QuantumSimulator/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/qsim_core.dir/src/QuantumCircuit.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsim_core.dir/src/QuantumCircuit.cpp.o -MF CMakeFiles/qsim_core.dir/src/QuantumCircuit.cpp.o.d -o CMakeFiles/qsim_core.dir/src/QuantumCircuit.cpp.o -c /home/l-100809/QuantumSimulator/QuantumSimulator/src/QuantumCircuit.cpp
-
-CMakeFiles/qsim_core.dir/src/QuantumCircuit.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qsim_core.dir/src/QuantumCircuit.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/l-100809/QuantumSimulator/QuantumSimulator/src/QuantumCircuit.cpp > CMakeFiles/qsim_core.dir/src/QuantumCircuit.cpp.i
-
-CMakeFiles/qsim_core.dir/src/QuantumCircuit.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qsim_core.dir/src/QuantumCircuit.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/l-100809/QuantumSimulator/QuantumSimulator/src/QuantumCircuit.cpp -o CMakeFiles/qsim_core.dir/src/QuantumCircuit.cpp.s
-
-CMakeFiles/qsim_core.dir/src/QASM_Parser.cpp.o: CMakeFiles/qsim_core.dir/flags.make
-CMakeFiles/qsim_core.dir/src/QASM_Parser.cpp.o: /home/l-100809/QuantumSimulator/QuantumSimulator/src/QASM_Parser.cpp
-CMakeFiles/qsim_core.dir/src/QASM_Parser.cpp.o: CMakeFiles/qsim_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100809/QuantumSimulator/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/qsim_core.dir/src/QASM_Parser.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsim_core.dir/src/QASM_Parser.cpp.o -MF CMakeFiles/qsim_core.dir/src/QASM_Parser.cpp.o.d -o CMakeFiles/qsim_core.dir/src/QASM_Parser.cpp.o -c /home/l-100809/QuantumSimulator/QuantumSimulator/src/QASM_Parser.cpp
-
-CMakeFiles/qsim_core.dir/src/QASM_Parser.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qsim_core.dir/src/QASM_Parser.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/l-100809/QuantumSimulator/QuantumSimulator/src/QASM_Parser.cpp > CMakeFiles/qsim_core.dir/src/QASM_Parser.cpp.i
-
-CMakeFiles/qsim_core.dir/src/QASM_Parser.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qsim_core.dir/src/QASM_Parser.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/l-100809/QuantumSimulator/QuantumSimulator/src/QASM_Parser.cpp -o CMakeFiles/qsim_core.dir/src/QASM_Parser.cpp.s
-
-CMakeFiles/qsim_core.dir/src/Benchmark.cpp.o: CMakeFiles/qsim_core.dir/flags.make
-CMakeFiles/qsim_core.dir/src/Benchmark.cpp.o: /home/l-100809/QuantumSimulator/QuantumSimulator/src/Benchmark.cpp
-CMakeFiles/qsim_core.dir/src/Benchmark.cpp.o: CMakeFiles/qsim_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100809/QuantumSimulator/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/qsim_core.dir/src/Benchmark.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsim_core.dir/src/Benchmark.cpp.o -MF CMakeFiles/qsim_core.dir/src/Benchmark.cpp.o.d -o CMakeFiles/qsim_core.dir/src/Benchmark.cpp.o -c /home/l-100809/QuantumSimulator/QuantumSimulator/src/Benchmark.cpp
-
-CMakeFiles/qsim_core.dir/src/Benchmark.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qsim_core.dir/src/Benchmark.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/l-100809/QuantumSimulator/QuantumSimulator/src/Benchmark.cpp > CMakeFiles/qsim_core.dir/src/Benchmark.cpp.i
-
-CMakeFiles/qsim_core.dir/src/Benchmark.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qsim_core.dir/src/Benchmark.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/l-100809/QuantumSimulator/QuantumSimulator/src/Benchmark.cpp -o CMakeFiles/qsim_core.dir/src/Benchmark.cpp.s
-
-CMakeFiles/qsim_core.dir/src/DensityMatrix.cpp.o: CMakeFiles/qsim_core.dir/flags.make
-CMakeFiles/qsim_core.dir/src/DensityMatrix.cpp.o: /home/l-100809/QuantumSimulator/QuantumSimulator/src/DensityMatrix.cpp
-CMakeFiles/qsim_core.dir/src/DensityMatrix.cpp.o: CMakeFiles/qsim_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100809/QuantumSimulator/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/qsim_core.dir/src/DensityMatrix.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsim_core.dir/src/DensityMatrix.cpp.o -MF CMakeFiles/qsim_core.dir/src/DensityMatrix.cpp.o.d -o CMakeFiles/qsim_core.dir/src/DensityMatrix.cpp.o -c /home/l-100809/QuantumSimulator/QuantumSimulator/src/DensityMatrix.cpp
-
-CMakeFiles/qsim_core.dir/src/DensityMatrix.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qsim_core.dir/src/DensityMatrix.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/l-100809/QuantumSimulator/QuantumSimulator/src/DensityMatrix.cpp > CMakeFiles/qsim_core.dir/src/DensityMatrix.cpp.i
-
-CMakeFiles/qsim_core.dir/src/DensityMatrix.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qsim_core.dir/src/DensityMatrix.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/l-100809/QuantumSimulator/QuantumSimulator/src/DensityMatrix.cpp -o CMakeFiles/qsim_core.dir/src/DensityMatrix.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/StateVector.cpp -o CMakeFiles/qsim_core.dir/src/StateVector.cpp.s
 
 CMakeFiles/qsim_core.dir/src/StateVectorBackend.cpp.o: CMakeFiles/qsim_core.dir/flags.make
-CMakeFiles/qsim_core.dir/src/StateVectorBackend.cpp.o: /home/l-100809/QuantumSimulator/QuantumSimulator/src/StateVectorBackend.cpp
+CMakeFiles/qsim_core.dir/src/StateVectorBackend.cpp.o: /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/StateVectorBackend.cpp
 CMakeFiles/qsim_core.dir/src/StateVectorBackend.cpp.o: CMakeFiles/qsim_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100809/QuantumSimulator/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/qsim_core.dir/src/StateVectorBackend.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsim_core.dir/src/StateVectorBackend.cpp.o -MF CMakeFiles/qsim_core.dir/src/StateVectorBackend.cpp.o.d -o CMakeFiles/qsim_core.dir/src/StateVectorBackend.cpp.o -c /home/l-100809/QuantumSimulator/QuantumSimulator/src/StateVectorBackend.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/qsim_core.dir/src/StateVectorBackend.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsim_core.dir/src/StateVectorBackend.cpp.o -MF CMakeFiles/qsim_core.dir/src/StateVectorBackend.cpp.o.d -o CMakeFiles/qsim_core.dir/src/StateVectorBackend.cpp.o -c /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/StateVectorBackend.cpp
 
 CMakeFiles/qsim_core.dir/src/StateVectorBackend.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qsim_core.dir/src/StateVectorBackend.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/l-100809/QuantumSimulator/QuantumSimulator/src/StateVectorBackend.cpp > CMakeFiles/qsim_core.dir/src/StateVectorBackend.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/StateVectorBackend.cpp > CMakeFiles/qsim_core.dir/src/StateVectorBackend.cpp.i
 
 CMakeFiles/qsim_core.dir/src/StateVectorBackend.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qsim_core.dir/src/StateVectorBackend.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/l-100809/QuantumSimulator/QuantumSimulator/src/StateVectorBackend.cpp -o CMakeFiles/qsim_core.dir/src/StateVectorBackend.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/StateVectorBackend.cpp -o CMakeFiles/qsim_core.dir/src/StateVectorBackend.cpp.s
 
-CMakeFiles/qsim_core.dir/src/BitFlipChannel.cpp.o: CMakeFiles/qsim_core.dir/flags.make
-CMakeFiles/qsim_core.dir/src/BitFlipChannel.cpp.o: /home/l-100809/QuantumSimulator/QuantumSimulator/src/BitFlipChannel.cpp
-CMakeFiles/qsim_core.dir/src/BitFlipChannel.cpp.o: CMakeFiles/qsim_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100809/QuantumSimulator/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/qsim_core.dir/src/BitFlipChannel.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsim_core.dir/src/BitFlipChannel.cpp.o -MF CMakeFiles/qsim_core.dir/src/BitFlipChannel.cpp.o.d -o CMakeFiles/qsim_core.dir/src/BitFlipChannel.cpp.o -c /home/l-100809/QuantumSimulator/QuantumSimulator/src/BitFlipChannel.cpp
+CMakeFiles/qsim_core.dir/src/Gates.cpp.o: CMakeFiles/qsim_core.dir/flags.make
+CMakeFiles/qsim_core.dir/src/Gates.cpp.o: /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/Gates.cpp
+CMakeFiles/qsim_core.dir/src/Gates.cpp.o: CMakeFiles/qsim_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/qsim_core.dir/src/Gates.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsim_core.dir/src/Gates.cpp.o -MF CMakeFiles/qsim_core.dir/src/Gates.cpp.o.d -o CMakeFiles/qsim_core.dir/src/Gates.cpp.o -c /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/Gates.cpp
 
-CMakeFiles/qsim_core.dir/src/BitFlipChannel.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qsim_core.dir/src/BitFlipChannel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/l-100809/QuantumSimulator/QuantumSimulator/src/BitFlipChannel.cpp > CMakeFiles/qsim_core.dir/src/BitFlipChannel.cpp.i
+CMakeFiles/qsim_core.dir/src/Gates.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qsim_core.dir/src/Gates.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/Gates.cpp > CMakeFiles/qsim_core.dir/src/Gates.cpp.i
 
-CMakeFiles/qsim_core.dir/src/BitFlipChannel.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qsim_core.dir/src/BitFlipChannel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/l-100809/QuantumSimulator/QuantumSimulator/src/BitFlipChannel.cpp -o CMakeFiles/qsim_core.dir/src/BitFlipChannel.cpp.s
+CMakeFiles/qsim_core.dir/src/Gates.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qsim_core.dir/src/Gates.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/Gates.cpp -o CMakeFiles/qsim_core.dir/src/Gates.cpp.s
+
+CMakeFiles/qsim_core.dir/src/Simulator.cpp.o: CMakeFiles/qsim_core.dir/flags.make
+CMakeFiles/qsim_core.dir/src/Simulator.cpp.o: /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/Simulator.cpp
+CMakeFiles/qsim_core.dir/src/Simulator.cpp.o: CMakeFiles/qsim_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/qsim_core.dir/src/Simulator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsim_core.dir/src/Simulator.cpp.o -MF CMakeFiles/qsim_core.dir/src/Simulator.cpp.o.d -o CMakeFiles/qsim_core.dir/src/Simulator.cpp.o -c /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/Simulator.cpp
+
+CMakeFiles/qsim_core.dir/src/Simulator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qsim_core.dir/src/Simulator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/Simulator.cpp > CMakeFiles/qsim_core.dir/src/Simulator.cpp.i
+
+CMakeFiles/qsim_core.dir/src/Simulator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qsim_core.dir/src/Simulator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/Simulator.cpp -o CMakeFiles/qsim_core.dir/src/Simulator.cpp.s
+
+CMakeFiles/qsim_core.dir/src/QuantumCircuit.cpp.o: CMakeFiles/qsim_core.dir/flags.make
+CMakeFiles/qsim_core.dir/src/QuantumCircuit.cpp.o: /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/QuantumCircuit.cpp
+CMakeFiles/qsim_core.dir/src/QuantumCircuit.cpp.o: CMakeFiles/qsim_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/qsim_core.dir/src/QuantumCircuit.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsim_core.dir/src/QuantumCircuit.cpp.o -MF CMakeFiles/qsim_core.dir/src/QuantumCircuit.cpp.o.d -o CMakeFiles/qsim_core.dir/src/QuantumCircuit.cpp.o -c /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/QuantumCircuit.cpp
+
+CMakeFiles/qsim_core.dir/src/QuantumCircuit.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qsim_core.dir/src/QuantumCircuit.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/QuantumCircuit.cpp > CMakeFiles/qsim_core.dir/src/QuantumCircuit.cpp.i
+
+CMakeFiles/qsim_core.dir/src/QuantumCircuit.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qsim_core.dir/src/QuantumCircuit.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/QuantumCircuit.cpp -o CMakeFiles/qsim_core.dir/src/QuantumCircuit.cpp.s
+
+CMakeFiles/qsim_core.dir/src/QASM_Parser.cpp.o: CMakeFiles/qsim_core.dir/flags.make
+CMakeFiles/qsim_core.dir/src/QASM_Parser.cpp.o: /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/QASM_Parser.cpp
+CMakeFiles/qsim_core.dir/src/QASM_Parser.cpp.o: CMakeFiles/qsim_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/qsim_core.dir/src/QASM_Parser.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsim_core.dir/src/QASM_Parser.cpp.o -MF CMakeFiles/qsim_core.dir/src/QASM_Parser.cpp.o.d -o CMakeFiles/qsim_core.dir/src/QASM_Parser.cpp.o -c /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/QASM_Parser.cpp
+
+CMakeFiles/qsim_core.dir/src/QASM_Parser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qsim_core.dir/src/QASM_Parser.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/QASM_Parser.cpp > CMakeFiles/qsim_core.dir/src/QASM_Parser.cpp.i
+
+CMakeFiles/qsim_core.dir/src/QASM_Parser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qsim_core.dir/src/QASM_Parser.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/QASM_Parser.cpp -o CMakeFiles/qsim_core.dir/src/QASM_Parser.cpp.s
+
+CMakeFiles/qsim_core.dir/src/Benchmark.cpp.o: CMakeFiles/qsim_core.dir/flags.make
+CMakeFiles/qsim_core.dir/src/Benchmark.cpp.o: /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/Benchmark.cpp
+CMakeFiles/qsim_core.dir/src/Benchmark.cpp.o: CMakeFiles/qsim_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/qsim_core.dir/src/Benchmark.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsim_core.dir/src/Benchmark.cpp.o -MF CMakeFiles/qsim_core.dir/src/Benchmark.cpp.o.d -o CMakeFiles/qsim_core.dir/src/Benchmark.cpp.o -c /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/Benchmark.cpp
+
+CMakeFiles/qsim_core.dir/src/Benchmark.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qsim_core.dir/src/Benchmark.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/Benchmark.cpp > CMakeFiles/qsim_core.dir/src/Benchmark.cpp.i
+
+CMakeFiles/qsim_core.dir/src/Benchmark.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qsim_core.dir/src/Benchmark.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/Benchmark.cpp -o CMakeFiles/qsim_core.dir/src/Benchmark.cpp.s
+
+CMakeFiles/qsim_core.dir/src/DensityMatrix.cpp.o: CMakeFiles/qsim_core.dir/flags.make
+CMakeFiles/qsim_core.dir/src/DensityMatrix.cpp.o: /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/DensityMatrix.cpp
+CMakeFiles/qsim_core.dir/src/DensityMatrix.cpp.o: CMakeFiles/qsim_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/qsim_core.dir/src/DensityMatrix.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsim_core.dir/src/DensityMatrix.cpp.o -MF CMakeFiles/qsim_core.dir/src/DensityMatrix.cpp.o.d -o CMakeFiles/qsim_core.dir/src/DensityMatrix.cpp.o -c /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/DensityMatrix.cpp
+
+CMakeFiles/qsim_core.dir/src/DensityMatrix.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qsim_core.dir/src/DensityMatrix.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/DensityMatrix.cpp > CMakeFiles/qsim_core.dir/src/DensityMatrix.cpp.i
+
+CMakeFiles/qsim_core.dir/src/DensityMatrix.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qsim_core.dir/src/DensityMatrix.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/DensityMatrix.cpp -o CMakeFiles/qsim_core.dir/src/DensityMatrix.cpp.s
 
 CMakeFiles/qsim_core.dir/src/DensityMatrixBackend.cpp.o: CMakeFiles/qsim_core.dir/flags.make
-CMakeFiles/qsim_core.dir/src/DensityMatrixBackend.cpp.o: /home/l-100809/QuantumSimulator/QuantumSimulator/src/DensityMatrixBackend.cpp
+CMakeFiles/qsim_core.dir/src/DensityMatrixBackend.cpp.o: /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/DensityMatrixBackend.cpp
 CMakeFiles/qsim_core.dir/src/DensityMatrixBackend.cpp.o: CMakeFiles/qsim_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100809/QuantumSimulator/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/qsim_core.dir/src/DensityMatrixBackend.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsim_core.dir/src/DensityMatrixBackend.cpp.o -MF CMakeFiles/qsim_core.dir/src/DensityMatrixBackend.cpp.o.d -o CMakeFiles/qsim_core.dir/src/DensityMatrixBackend.cpp.o -c /home/l-100809/QuantumSimulator/QuantumSimulator/src/DensityMatrixBackend.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/qsim_core.dir/src/DensityMatrixBackend.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsim_core.dir/src/DensityMatrixBackend.cpp.o -MF CMakeFiles/qsim_core.dir/src/DensityMatrixBackend.cpp.o.d -o CMakeFiles/qsim_core.dir/src/DensityMatrixBackend.cpp.o -c /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/DensityMatrixBackend.cpp
 
 CMakeFiles/qsim_core.dir/src/DensityMatrixBackend.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qsim_core.dir/src/DensityMatrixBackend.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/l-100809/QuantumSimulator/QuantumSimulator/src/DensityMatrixBackend.cpp > CMakeFiles/qsim_core.dir/src/DensityMatrixBackend.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/DensityMatrixBackend.cpp > CMakeFiles/qsim_core.dir/src/DensityMatrixBackend.cpp.i
 
 CMakeFiles/qsim_core.dir/src/DensityMatrixBackend.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qsim_core.dir/src/DensityMatrixBackend.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/l-100809/QuantumSimulator/QuantumSimulator/src/DensityMatrixBackend.cpp -o CMakeFiles/qsim_core.dir/src/DensityMatrixBackend.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/DensityMatrixBackend.cpp -o CMakeFiles/qsim_core.dir/src/DensityMatrixBackend.cpp.s
+
+CMakeFiles/qsim_core.dir/src/BitFlipChannel.cpp.o: CMakeFiles/qsim_core.dir/flags.make
+CMakeFiles/qsim_core.dir/src/BitFlipChannel.cpp.o: /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/BitFlipChannel.cpp
+CMakeFiles/qsim_core.dir/src/BitFlipChannel.cpp.o: CMakeFiles/qsim_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/qsim_core.dir/src/BitFlipChannel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsim_core.dir/src/BitFlipChannel.cpp.o -MF CMakeFiles/qsim_core.dir/src/BitFlipChannel.cpp.o.d -o CMakeFiles/qsim_core.dir/src/BitFlipChannel.cpp.o -c /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/BitFlipChannel.cpp
+
+CMakeFiles/qsim_core.dir/src/BitFlipChannel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qsim_core.dir/src/BitFlipChannel.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/BitFlipChannel.cpp > CMakeFiles/qsim_core.dir/src/BitFlipChannel.cpp.i
+
+CMakeFiles/qsim_core.dir/src/BitFlipChannel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qsim_core.dir/src/BitFlipChannel.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/BitFlipChannel.cpp -o CMakeFiles/qsim_core.dir/src/BitFlipChannel.cpp.s
 
 CMakeFiles/qsim_core.dir/src/AmplitudeDampingChannel.cpp.o: CMakeFiles/qsim_core.dir/flags.make
-CMakeFiles/qsim_core.dir/src/AmplitudeDampingChannel.cpp.o: /home/l-100809/QuantumSimulator/QuantumSimulator/src/AmplitudeDampingChannel.cpp
+CMakeFiles/qsim_core.dir/src/AmplitudeDampingChannel.cpp.o: /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/AmplitudeDampingChannel.cpp
 CMakeFiles/qsim_core.dir/src/AmplitudeDampingChannel.cpp.o: CMakeFiles/qsim_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100809/QuantumSimulator/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/qsim_core.dir/src/AmplitudeDampingChannel.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsim_core.dir/src/AmplitudeDampingChannel.cpp.o -MF CMakeFiles/qsim_core.dir/src/AmplitudeDampingChannel.cpp.o.d -o CMakeFiles/qsim_core.dir/src/AmplitudeDampingChannel.cpp.o -c /home/l-100809/QuantumSimulator/QuantumSimulator/src/AmplitudeDampingChannel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/qsim_core.dir/src/AmplitudeDampingChannel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsim_core.dir/src/AmplitudeDampingChannel.cpp.o -MF CMakeFiles/qsim_core.dir/src/AmplitudeDampingChannel.cpp.o.d -o CMakeFiles/qsim_core.dir/src/AmplitudeDampingChannel.cpp.o -c /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/AmplitudeDampingChannel.cpp
 
 CMakeFiles/qsim_core.dir/src/AmplitudeDampingChannel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qsim_core.dir/src/AmplitudeDampingChannel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/l-100809/QuantumSimulator/QuantumSimulator/src/AmplitudeDampingChannel.cpp > CMakeFiles/qsim_core.dir/src/AmplitudeDampingChannel.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/AmplitudeDampingChannel.cpp > CMakeFiles/qsim_core.dir/src/AmplitudeDampingChannel.cpp.i
 
 CMakeFiles/qsim_core.dir/src/AmplitudeDampingChannel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qsim_core.dir/src/AmplitudeDampingChannel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/l-100809/QuantumSimulator/QuantumSimulator/src/AmplitudeDampingChannel.cpp -o CMakeFiles/qsim_core.dir/src/AmplitudeDampingChannel.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/AmplitudeDampingChannel.cpp -o CMakeFiles/qsim_core.dir/src/AmplitudeDampingChannel.cpp.s
 
 CMakeFiles/qsim_core.dir/src/PhaseDampingChannel.cpp.o: CMakeFiles/qsim_core.dir/flags.make
-CMakeFiles/qsim_core.dir/src/PhaseDampingChannel.cpp.o: /home/l-100809/QuantumSimulator/QuantumSimulator/src/PhaseDampingChannel.cpp
+CMakeFiles/qsim_core.dir/src/PhaseDampingChannel.cpp.o: /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/PhaseDampingChannel.cpp
 CMakeFiles/qsim_core.dir/src/PhaseDampingChannel.cpp.o: CMakeFiles/qsim_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100809/QuantumSimulator/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/qsim_core.dir/src/PhaseDampingChannel.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsim_core.dir/src/PhaseDampingChannel.cpp.o -MF CMakeFiles/qsim_core.dir/src/PhaseDampingChannel.cpp.o.d -o CMakeFiles/qsim_core.dir/src/PhaseDampingChannel.cpp.o -c /home/l-100809/QuantumSimulator/QuantumSimulator/src/PhaseDampingChannel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/qsim_core.dir/src/PhaseDampingChannel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsim_core.dir/src/PhaseDampingChannel.cpp.o -MF CMakeFiles/qsim_core.dir/src/PhaseDampingChannel.cpp.o.d -o CMakeFiles/qsim_core.dir/src/PhaseDampingChannel.cpp.o -c /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/PhaseDampingChannel.cpp
 
 CMakeFiles/qsim_core.dir/src/PhaseDampingChannel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qsim_core.dir/src/PhaseDampingChannel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/l-100809/QuantumSimulator/QuantumSimulator/src/PhaseDampingChannel.cpp > CMakeFiles/qsim_core.dir/src/PhaseDampingChannel.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/PhaseDampingChannel.cpp > CMakeFiles/qsim_core.dir/src/PhaseDampingChannel.cpp.i
 
 CMakeFiles/qsim_core.dir/src/PhaseDampingChannel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qsim_core.dir/src/PhaseDampingChannel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/l-100809/QuantumSimulator/QuantumSimulator/src/PhaseDampingChannel.cpp -o CMakeFiles/qsim_core.dir/src/PhaseDampingChannel.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/PhaseDampingChannel.cpp -o CMakeFiles/qsim_core.dir/src/PhaseDampingChannel.cpp.s
 
 CMakeFiles/qsim_core.dir/src/PhaseFlipChannel.cpp.o: CMakeFiles/qsim_core.dir/flags.make
-CMakeFiles/qsim_core.dir/src/PhaseFlipChannel.cpp.o: /home/l-100809/QuantumSimulator/QuantumSimulator/src/PhaseFlipChannel.cpp
+CMakeFiles/qsim_core.dir/src/PhaseFlipChannel.cpp.o: /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/PhaseFlipChannel.cpp
 CMakeFiles/qsim_core.dir/src/PhaseFlipChannel.cpp.o: CMakeFiles/qsim_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100809/QuantumSimulator/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/qsim_core.dir/src/PhaseFlipChannel.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsim_core.dir/src/PhaseFlipChannel.cpp.o -MF CMakeFiles/qsim_core.dir/src/PhaseFlipChannel.cpp.o.d -o CMakeFiles/qsim_core.dir/src/PhaseFlipChannel.cpp.o -c /home/l-100809/QuantumSimulator/QuantumSimulator/src/PhaseFlipChannel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/qsim_core.dir/src/PhaseFlipChannel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsim_core.dir/src/PhaseFlipChannel.cpp.o -MF CMakeFiles/qsim_core.dir/src/PhaseFlipChannel.cpp.o.d -o CMakeFiles/qsim_core.dir/src/PhaseFlipChannel.cpp.o -c /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/PhaseFlipChannel.cpp
 
 CMakeFiles/qsim_core.dir/src/PhaseFlipChannel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qsim_core.dir/src/PhaseFlipChannel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/l-100809/QuantumSimulator/QuantumSimulator/src/PhaseFlipChannel.cpp > CMakeFiles/qsim_core.dir/src/PhaseFlipChannel.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/PhaseFlipChannel.cpp > CMakeFiles/qsim_core.dir/src/PhaseFlipChannel.cpp.i
 
 CMakeFiles/qsim_core.dir/src/PhaseFlipChannel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qsim_core.dir/src/PhaseFlipChannel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/l-100809/QuantumSimulator/QuantumSimulator/src/PhaseFlipChannel.cpp -o CMakeFiles/qsim_core.dir/src/PhaseFlipChannel.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/PhaseFlipChannel.cpp -o CMakeFiles/qsim_core.dir/src/PhaseFlipChannel.cpp.s
 
 CMakeFiles/qsim_core.dir/src/DepolarizingChannel.cpp.o: CMakeFiles/qsim_core.dir/flags.make
-CMakeFiles/qsim_core.dir/src/DepolarizingChannel.cpp.o: /home/l-100809/QuantumSimulator/QuantumSimulator/src/DepolarizingChannel.cpp
+CMakeFiles/qsim_core.dir/src/DepolarizingChannel.cpp.o: /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/DepolarizingChannel.cpp
 CMakeFiles/qsim_core.dir/src/DepolarizingChannel.cpp.o: CMakeFiles/qsim_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100809/QuantumSimulator/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/qsim_core.dir/src/DepolarizingChannel.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsim_core.dir/src/DepolarizingChannel.cpp.o -MF CMakeFiles/qsim_core.dir/src/DepolarizingChannel.cpp.o.d -o CMakeFiles/qsim_core.dir/src/DepolarizingChannel.cpp.o -c /home/l-100809/QuantumSimulator/QuantumSimulator/src/DepolarizingChannel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/qsim_core.dir/src/DepolarizingChannel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsim_core.dir/src/DepolarizingChannel.cpp.o -MF CMakeFiles/qsim_core.dir/src/DepolarizingChannel.cpp.o.d -o CMakeFiles/qsim_core.dir/src/DepolarizingChannel.cpp.o -c /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/DepolarizingChannel.cpp
 
 CMakeFiles/qsim_core.dir/src/DepolarizingChannel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qsim_core.dir/src/DepolarizingChannel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/l-100809/QuantumSimulator/QuantumSimulator/src/DepolarizingChannel.cpp > CMakeFiles/qsim_core.dir/src/DepolarizingChannel.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/DepolarizingChannel.cpp > CMakeFiles/qsim_core.dir/src/DepolarizingChannel.cpp.i
 
 CMakeFiles/qsim_core.dir/src/DepolarizingChannel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qsim_core.dir/src/DepolarizingChannel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/l-100809/QuantumSimulator/QuantumSimulator/src/DepolarizingChannel.cpp -o CMakeFiles/qsim_core.dir/src/DepolarizingChannel.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/DepolarizingChannel.cpp -o CMakeFiles/qsim_core.dir/src/DepolarizingChannel.cpp.s
 
 CMakeFiles/qsim_core.dir/src/MatrixUtils.cpp.o: CMakeFiles/qsim_core.dir/flags.make
-CMakeFiles/qsim_core.dir/src/MatrixUtils.cpp.o: /home/l-100809/QuantumSimulator/QuantumSimulator/src/MatrixUtils.cpp
+CMakeFiles/qsim_core.dir/src/MatrixUtils.cpp.o: /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/MatrixUtils.cpp
 CMakeFiles/qsim_core.dir/src/MatrixUtils.cpp.o: CMakeFiles/qsim_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100809/QuantumSimulator/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/qsim_core.dir/src/MatrixUtils.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsim_core.dir/src/MatrixUtils.cpp.o -MF CMakeFiles/qsim_core.dir/src/MatrixUtils.cpp.o.d -o CMakeFiles/qsim_core.dir/src/MatrixUtils.cpp.o -c /home/l-100809/QuantumSimulator/QuantumSimulator/src/MatrixUtils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/qsim_core.dir/src/MatrixUtils.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsim_core.dir/src/MatrixUtils.cpp.o -MF CMakeFiles/qsim_core.dir/src/MatrixUtils.cpp.o.d -o CMakeFiles/qsim_core.dir/src/MatrixUtils.cpp.o -c /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/MatrixUtils.cpp
 
 CMakeFiles/qsim_core.dir/src/MatrixUtils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qsim_core.dir/src/MatrixUtils.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/l-100809/QuantumSimulator/QuantumSimulator/src/MatrixUtils.cpp > CMakeFiles/qsim_core.dir/src/MatrixUtils.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/MatrixUtils.cpp > CMakeFiles/qsim_core.dir/src/MatrixUtils.cpp.i
 
 CMakeFiles/qsim_core.dir/src/MatrixUtils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qsim_core.dir/src/MatrixUtils.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/l-100809/QuantumSimulator/QuantumSimulator/src/MatrixUtils.cpp -o CMakeFiles/qsim_core.dir/src/MatrixUtils.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/MatrixUtils.cpp -o CMakeFiles/qsim_core.dir/src/MatrixUtils.cpp.s
 
 CMakeFiles/qsim_core.dir/src/GateFuser.cpp.o: CMakeFiles/qsim_core.dir/flags.make
-CMakeFiles/qsim_core.dir/src/GateFuser.cpp.o: /home/l-100809/QuantumSimulator/QuantumSimulator/src/GateFuser.cpp
+CMakeFiles/qsim_core.dir/src/GateFuser.cpp.o: /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/GateFuser.cpp
 CMakeFiles/qsim_core.dir/src/GateFuser.cpp.o: CMakeFiles/qsim_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100809/QuantumSimulator/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/qsim_core.dir/src/GateFuser.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsim_core.dir/src/GateFuser.cpp.o -MF CMakeFiles/qsim_core.dir/src/GateFuser.cpp.o.d -o CMakeFiles/qsim_core.dir/src/GateFuser.cpp.o -c /home/l-100809/QuantumSimulator/QuantumSimulator/src/GateFuser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/qsim_core.dir/src/GateFuser.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsim_core.dir/src/GateFuser.cpp.o -MF CMakeFiles/qsim_core.dir/src/GateFuser.cpp.o.d -o CMakeFiles/qsim_core.dir/src/GateFuser.cpp.o -c /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/GateFuser.cpp
 
 CMakeFiles/qsim_core.dir/src/GateFuser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qsim_core.dir/src/GateFuser.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/l-100809/QuantumSimulator/QuantumSimulator/src/GateFuser.cpp > CMakeFiles/qsim_core.dir/src/GateFuser.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/GateFuser.cpp > CMakeFiles/qsim_core.dir/src/GateFuser.cpp.i
 
 CMakeFiles/qsim_core.dir/src/GateFuser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qsim_core.dir/src/GateFuser.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/l-100809/QuantumSimulator/QuantumSimulator/src/GateFuser.cpp -o CMakeFiles/qsim_core.dir/src/GateFuser.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/src/GateFuser.cpp -o CMakeFiles/qsim_core.dir/src/GateFuser.cpp.s
 
 # Object files for target qsim_core
 qsim_core_OBJECTS = \
 "CMakeFiles/qsim_core.dir/src/StateVector.cpp.o" \
+"CMakeFiles/qsim_core.dir/src/StateVectorBackend.cpp.o" \
 "CMakeFiles/qsim_core.dir/src/Gates.cpp.o" \
 "CMakeFiles/qsim_core.dir/src/Simulator.cpp.o" \
 "CMakeFiles/qsim_core.dir/src/QuantumCircuit.cpp.o" \
 "CMakeFiles/qsim_core.dir/src/QASM_Parser.cpp.o" \
 "CMakeFiles/qsim_core.dir/src/Benchmark.cpp.o" \
 "CMakeFiles/qsim_core.dir/src/DensityMatrix.cpp.o" \
-"CMakeFiles/qsim_core.dir/src/StateVectorBackend.cpp.o" \
-"CMakeFiles/qsim_core.dir/src/BitFlipChannel.cpp.o" \
 "CMakeFiles/qsim_core.dir/src/DensityMatrixBackend.cpp.o" \
+"CMakeFiles/qsim_core.dir/src/BitFlipChannel.cpp.o" \
 "CMakeFiles/qsim_core.dir/src/AmplitudeDampingChannel.cpp.o" \
 "CMakeFiles/qsim_core.dir/src/PhaseDampingChannel.cpp.o" \
 "CMakeFiles/qsim_core.dir/src/PhaseFlipChannel.cpp.o" \
@@ -316,15 +316,15 @@ qsim_core_OBJECTS = \
 qsim_core_EXTERNAL_OBJECTS =
 
 libqsim_core.a: CMakeFiles/qsim_core.dir/src/StateVector.cpp.o
+libqsim_core.a: CMakeFiles/qsim_core.dir/src/StateVectorBackend.cpp.o
 libqsim_core.a: CMakeFiles/qsim_core.dir/src/Gates.cpp.o
 libqsim_core.a: CMakeFiles/qsim_core.dir/src/Simulator.cpp.o
 libqsim_core.a: CMakeFiles/qsim_core.dir/src/QuantumCircuit.cpp.o
 libqsim_core.a: CMakeFiles/qsim_core.dir/src/QASM_Parser.cpp.o
 libqsim_core.a: CMakeFiles/qsim_core.dir/src/Benchmark.cpp.o
 libqsim_core.a: CMakeFiles/qsim_core.dir/src/DensityMatrix.cpp.o
-libqsim_core.a: CMakeFiles/qsim_core.dir/src/StateVectorBackend.cpp.o
-libqsim_core.a: CMakeFiles/qsim_core.dir/src/BitFlipChannel.cpp.o
 libqsim_core.a: CMakeFiles/qsim_core.dir/src/DensityMatrixBackend.cpp.o
+libqsim_core.a: CMakeFiles/qsim_core.dir/src/BitFlipChannel.cpp.o
 libqsim_core.a: CMakeFiles/qsim_core.dir/src/AmplitudeDampingChannel.cpp.o
 libqsim_core.a: CMakeFiles/qsim_core.dir/src/PhaseDampingChannel.cpp.o
 libqsim_core.a: CMakeFiles/qsim_core.dir/src/PhaseFlipChannel.cpp.o
@@ -333,7 +333,7 @@ libqsim_core.a: CMakeFiles/qsim_core.dir/src/MatrixUtils.cpp.o
 libqsim_core.a: CMakeFiles/qsim_core.dir/src/GateFuser.cpp.o
 libqsim_core.a: CMakeFiles/qsim_core.dir/build.make
 libqsim_core.a: CMakeFiles/qsim_core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/l-100809/QuantumSimulator/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX static library libqsim_core.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX static library libqsim_core.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/qsim_core.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/qsim_core.dir/link.txt --verbose=$(VERBOSE)
 
@@ -346,6 +346,6 @@ CMakeFiles/qsim_core.dir/clean:
 .PHONY : CMakeFiles/qsim_core.dir/clean
 
 CMakeFiles/qsim_core.dir/depend:
-	cd /home/l-100809/QuantumSimulator/QuantumSimulator/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/l-100809/QuantumSimulator/QuantumSimulator /home/l-100809/QuantumSimulator/QuantumSimulator /home/l-100809/QuantumSimulator/QuantumSimulator/build /home/l-100809/QuantumSimulator/QuantumSimulator/build /home/l-100809/QuantumSimulator/QuantumSimulator/build/CMakeFiles/qsim_core.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/build /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/build /home/l-100809/Downloads/QuantumSimulator_with_extended_tests/QuantumSimulator/build/CMakeFiles/qsim_core.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/qsim_core.dir/depend
 
